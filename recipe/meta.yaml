@@ -1,5 +1,5 @@
 {% set name = "langgraph" %}
-{% set version = "0.2.43" %}
+{% set version = "0.2.44" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: 42126538312d3c65634f44b4169f3d4f4440ad8b906f03f3035c8b468f6efaaa
+  sha256: 8ae179c3a77666b0a78b273d89d8f32a012282ad49298234426a4443d559aa62
 
 build:
   noarch: python
