@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
   sha256: f1a39ba0d9b3df3b807b14015e682bc2b445ceb760d113e75ab34209a7eaadef
 
 build:
