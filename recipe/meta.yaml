@@ -1,5 +1,5 @@
 {% set name = "langgraph" %}
-{% set version = "0.2.53" %}
+{% set version = "0.2.54" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: b83232a04f2b536cbeac542f9ad7e0265f41ac6b7c6706ba8e031e0e80cb13a6
+  sha256: be9d7572959de6f30c27e09168c8f78f6f86648a60ebb67ae815d159255a6b52
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - poetry-core >=1.0.0
     - pip
   run:
-    - langgraph-sdk >=0.1.32,<0.2.0
+    - langgraph-sdk >=0.1.42,<0.2.0
     - langgraph-checkpoint >=2.0.4,<3.0.0
     - python >=3.9.0,<4.0
     - langchain-core >=0.2.43,<0.4.0,!=0.3.0,!=0.3.1,!=0.3.2,!=0.3.3,!=0.3.4,!=0.3.5,!=0.3.6,!=0.3.7,!=0.3.8,!=0.3.9,!=0.3.10,!=0.3.11,!=0.3.12,!=0.3.13,!=0.3.14
