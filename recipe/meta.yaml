@@ -1,6 +1,6 @@
 {% set python_min = "3.9.0" %}
 {% set name = "langgraph" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: a5168395586478f7474fed0f5f65e8da4dafda19c0c236d63e4652f059df3b04
+  sha256: c6de009e638c3128232e8defa6e9a3218c03bcc2348ec7f06fba23ffcef4b98d
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - poetry-core >=1.0.0
     - pip
   run:
+    - pydantic >=2.7.4
     - python-xxhash >=3.5.0,<4.0.0
     - langgraph-prebuilt >=0.1.8,<0.2
     - langgraph-sdk >=0.1.42,<0.2.0
