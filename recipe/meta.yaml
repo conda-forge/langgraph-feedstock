@@ -1,6 +1,6 @@
 {% set python_min = "3.9.0" %}
 {% set name = "langgraph" %}
-{% set version = "0.4.10" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: 391dadf5051bab212d711da62b10ae6c97bbc912a9f812b4b27e92a934a401c6
+  sha256: 7ad6d42f2a44e93e225cc65c59fac51c55ae549c9824adc22971d00e5ac26443
 
 build:
   noarch: python
@@ -23,9 +23,9 @@ requirements:
   run:
     - pydantic >=2.7.4
     - python-xxhash >=3.5.0
-    - langgraph-prebuilt >=0.2.0
+    - langgraph-prebuilt >=0.5.0
     - langgraph-sdk >=0.1.42
-    - langgraph-checkpoint >=2.0.26
+    - langgraph-checkpoint >=2.1.0
     - python >={{ python_min }},<4.0
     - langchain-core >=0.1
 
