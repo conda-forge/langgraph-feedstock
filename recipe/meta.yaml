@@ -1,6 +1,6 @@
 {% set python_min = "3.9.0" %}
 {% set name = "langgraph" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: ac8784ac21224b3fa6d55061c28748fb2341cbfb509b0b16cbb28208a2ffea93
+  sha256: 0d2280d295133dc34ccc12eae1ad4d82ee847b009c59801de418068fa9248e1b
 
 build:
   noarch: python
