@@ -1,5 +1,5 @@
 {% set name = "langgraph" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langgraph-{{ version }}.tar.gz
-  sha256: 5f83ed0e9bbcc37635bc49cbc9b3d9306605fa07504f955b7a871ed715f9964c
+  sha256: 4985b32ceabb046a802621660836355dfcf2402c5876675dc353db684aa8f563
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - python-xxhash >=3.5.0
     - langgraph-prebuilt >=1.0.0,<1.1.0
     - langgraph-sdk >=0.2.2,<0.3.0
-    - langgraph-checkpoint >=2.1.0,<3.0.0
+    - langgraph-checkpoint >=2.1.0,<4.0.0
     - python >={{ python_min }},<4.0
     - langchain-core >=0.1
 
