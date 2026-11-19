@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langgraph
-  version: "1.2.22"
+  version: 1.2.23
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langgraph-${{ version }}.tar.gz
-  sha256: 32700dc34b5cf9ebb397258c2e56392f017d4dbc51c9591339225c3c1b7b5126
+  sha256: c405d9c750730e252b07f66d78fc3d7ace7d42414172fdf392c97d0143c7b041
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - pydantic >=2.7.4
     - python-xxhash >=3.5.0
-    - langgraph-prebuilt >=1.1.0,<1.2.0
+    - langgraph-prebuilt >=1.1.3,<1.2.0
     - langgraph-sdk >=0.4.6,<0.5.0
     - langgraph-checkpoint >=4.3.0,<5.0.0
     - python >=${{ python_min }},<4.0
